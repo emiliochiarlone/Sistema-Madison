@@ -394,8 +394,8 @@ public class VistaMenuPrincipal {
 		JButton bIngresar = new JButton("Ingresar");
 		bIngresar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				if ( passwordField.getText().equals(comercio.getContraseña())) {
-					lIngresar.setText("¡Bienvenido!");
+				if ( passwordField.getText().equals(comercio.getContraseÃ±a())) {
+					lIngresar.setText("ï¿½Bienvenido!");
 					lIngresar.setBounds(lIngresar.getX()+18, lIngresar.getY(), lIngresar.getWidth(), lIngresar.getHeight());
 					lIngresar.setBackground(SystemColor.GREEN);
 					lIngresar2.setVisible(false);

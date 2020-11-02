@@ -10,12 +10,12 @@ public class MySQLStuff {
 	private static final String CONTROLADOR = "com.mysql.jdbc.Driver";
     private static final String URL = "jdbc:mysql://localhost:3306/madison_db?allowPublicKeyRetrieval=true&useSSL=false";
     private static final String USUARIO = "root";
-    private static final String CLAVE = "1234";
+    private static final String CLAVE = "2ac35bec";
     private Statement statement;
     private ResultSet result;
     private Connection connection;
     
-    static { // se va a ejecutar al cargar la aplicación para evitar tener que llamar el metodo para cargar el controlador
+    static { // se va a ejecutar al cargar la aplicaciï¿½n para evitar tener que llamar el metodo para cargar el controlador
     	try {
     		 Class.forName(CONTROLADOR);
 		} catch (ClassNotFoundException e) {
@@ -39,7 +39,7 @@ public class MySQLStuff {
             this.connection = DriverManager.getConnection(URL, USUARIO, CLAVE);
             return Mensaje.listo;
         }  catch (SQLException e) {
-            System.out.println("Error en la conexión");
+            System.out.println("Error en la conexiï¿½n");
             e.printStackTrace();
             return Mensaje.error;
         }

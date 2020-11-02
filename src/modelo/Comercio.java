@@ -32,7 +32,7 @@ public class Comercio implements Serializable, iAlmacenable{
 	private HistorialGanancias historialGanancias;
 	private ListaClientes listaClientes;
 	private ListaVendedores listaVendedores;
-	private String contraseña = "bomberos85";
+	private String contraseÃ±a = "bomberos85";
 	
 	public Comercio() {
 		this.stock = new Stock();
@@ -50,7 +50,7 @@ public class Comercio implements Serializable, iAlmacenable{
 		for (Detalle i: listaDetalle) {
 			total -= (listaDePrecios.getPrecioCosto(i.getProducto_codigo())*i.getCantidad());
 		}
-		return total - (total*(5/100) ); //Se le descuenta el 5% que serían las comisiones para los vendedores
+		return total - (total*(5/100) ); //Se le descuenta el 5% que serï¿½an las comisiones para los vendedores
 	}
 	
 
@@ -134,12 +134,12 @@ public class Comercio implements Serializable, iAlmacenable{
 	}
 
 
-	public String getContraseña() {
-		return contraseña;
+	public String getContraseÃ±a() {
+		return contraseÃ±a;
 	}
 
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
+	public void setContraseÃ±a(String contraseÃ±a) {
+		this.contraseÃ±a = contraseÃ±a;
 	}
 
 	public void setListaClientes(ListaClientes listaClientes) {
